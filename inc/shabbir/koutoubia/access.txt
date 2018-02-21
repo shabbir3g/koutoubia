@@ -1,0 +1,164 @@
+Home = Accueil
+Menu = Buffet
+Specials = Spécalités
+Private Parties = Gallerie
+Order on line = Réservations (with our own booking plug in)
+and a Contact page
+
+
+Hi same type of job, i want it to be finish more faster than last time i need it for wednesday,
+i want you to take this website http://www.koutoubia.org/
+and put it in this wordpress website http://larcade.fr/
+
+cpanel is here: https://www.planethoster.net/fr/
+Nom de domaine: larcade.fr
+Nom d'utilisateur: larcrdda
+Mot de passe: 0jgD3iFx3bKCQC
+
+Have a look at all these elements and tell me if you can do it for wednesday
+
+Thanks
+
+
+
+website 
+User name: koutoubia
+
+pass: wCH@EM4m(uIchrI#Vi
+
+email: mostafizshabbir@gmail.com
+
+http://larcade.fr/wp-login.php?redirect_to=http%3A%2F%2Flarcade.fr%2Fwp-admin%2Fnav-menus.php&reauth=1
+mchresto@yahoo.fr
+iBqsh^!mvP#kn*
+
+
+
+
+htaccess file: 
+
+
+# BEGIN WpFastestCache
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.larcade.fr [NC]
+RewriteRule ^(.*)$ http\:\/\/larcade\.fr\/$1 [R=301,L]
+# Start WPFC Exclude
+# End WPFC Exclude
+RewriteCond %{HTTP_HOST} ^larcade.fr
+RewriteCond %{HTTP_USER_AGENT} !(facebookexternalhit|WhatsApp|Mediatoolkitbot)
+RewriteCond %{REQUEST_METHOD} !POST
+RewriteCond %{HTTPS} !=on
+RewriteCond %{REQUEST_URI} !(\/){2}$
+RewriteCond %{REQUEST_URI} \/$
+RewriteCond %{QUERY_STRING} !.+
+RewriteCond %{HTTP:Cookie} !wordpress_logged_in
+RewriteCond %{HTTP:Cookie} !comment_author_
+RewriteCond %{HTTP:Cookie} !wp_woocommerce_session
+RewriteCond %{HTTP:Cookie} !safirmobilswitcher=mobil
+RewriteCond %{HTTP:Profile} !^[a-z0-9\"]+ [NC]
+RewriteCond %{DOCUMENT_ROOT}/wp-content/cache/all/$1/index.html -f [or]
+RewriteCond /home/larcrdda/public_html/wp-content/cache/all/$1/index.html -f
+RewriteRule ^(.*) "/wp-content/cache/all/$1/index.html" [L]
+</IfModule>
+<FilesMatch "index\.(html|htm)$">
+AddDefaultCharset UTF-8
+<ifModule mod_headers.c>
+FileETag None
+Header unset ETag
+Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+Header set Pragma "no-cache"
+Header set Expires "Mon, 29 Oct 1923 20:30:00 GMT"
+</ifModule>
+</FilesMatch>
+# END WpFastestCache
+# BEGIN GzipWpFastestCache
+<IfModule mod_deflate.c>
+AddType x-font/woff .woff
+AddOutputFilterByType DEFLATE image/svg+xml
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/x-font-ttf
+AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+AddOutputFilterByType DEFLATE font/opentype font/ttf font/eot font/otf
+</IfModule>
+# END GzipWpFastestCache
+# BEGIN LBCWpFastestCache
+<FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|webp|js|css|swf|x-html|css|xml|js|woff|woff2|ttf|svg|eot)(\.gz)?$">
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault A0
+ExpiresByType image/webp A2592000
+ExpiresByType image/gif A2592000
+ExpiresByType image/png A2592000
+ExpiresByType image/jpg A2592000
+ExpiresByType image/jpeg A2592000
+ExpiresByType image/ico A2592000
+ExpiresByType image/svg+xml A2592000
+ExpiresByType text/css A2592000
+ExpiresByType text/javascript A2592000
+ExpiresByType application/javascript A2592000
+ExpiresByType application/x-javascript A2592000
+</IfModule>
+<IfModule mod_headers.c>
+Header set Expires "max-age=2592000, public"
+Header unset ETag
+Header set Connection keep-alive
+FileETag None
+</IfModule>
+</FilesMatch>
+# END LBCWpFastestCache
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+<IfModule mod_rewrite.c>
+RewriteCond %{HTTPS} on
+RewriteCond %{REQUEST_URI} !^/[0-9]+\..+\.cpaneldcv$
+RewriteCond %{REQUEST_URI} !^/[A-F0-9]{32}\.txt(?:\ Comodo\ DCV)?$
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/[0-9a-zA-Z_-]+$
+RewriteRule ^(.*)$ http://larcade.fr/$1 [R=301,L]
+</IfModule>
+
+//301 Redirect Old File
+Redirect 301 /reservez /moduleNew.htm
+Redirect 301 /reserver /moduleNew.htm
+Redirect 301 /reserve /moduleNew.htm
+
+<FilesMatch "\.(woff)$">
+    Header unset Vary
+</FilesMatch>
+
+<FilesMatch "\.(ttf)$">
+    Header unset Vary
+</FilesMatch>
+<FilesMatch "\.(woff2)$">
+    Header unset Vary
+</FilesMatch>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit
+
+
+
+
+
+

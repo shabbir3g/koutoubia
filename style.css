@@ -1,0 +1,380 @@
+/*!
+Theme Name: koutoubia
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: koutoubia
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+koutoubia is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+ html{
+   height: 100%;
+}
+         .webkit-mobile-body{
+         height: 100%;
+         overflow: hidden;
+         }
+         .webkit-mobile-body>div:first-child{
+         height:100%;
+         overflow: auto;
+         -webkit-overflow-scrolling: touch;
+         }
+         .specials-background {
+         background: url(images/specials_back.jpg) no-repeat center center fixed; -webkit-background-size: cover;
+         background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
+         url(images/specials_back.jpg) no-repeat center center fixed; -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;
+         }
+ .navbar.nav-v4{
+               background-color: rgba(86,59,47,0.7);
+               -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               -moz-transition: all 0.3s ease-in-out;
+               -webkit-transition: all 0.3s ease-in-out;
+               -o-transition: all 0.3s ease-in-out;
+               transition: all 0.3s ease-in-out;
+               }
+               .navbar.nav-v4.nav-scroll{
+               background-color: rgba(86,59,47,0.7);
+               -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               }
+               .drink-menu .navbar.nav-v4{
+               background-color: rgba(86,59,47,0.7);
+               -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               -moz-transition: all 0.3s ease-in-out;
+               -webkit-transition: all 0.3s ease-in-out;
+               -o-transition: all 0.3s ease-in-out;
+               transition: all 0.3s ease-in-out;
+               }
+               .drink-menu .navbar.nav-v4.nav-scroll{
+               background-color: rgba(86,59,47,0.7);
+               -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               }
+               .navbar-regular.nav-v4 .navbar-nav>li>a,
+               .navbar-regular.nav-v4 .navbar-nav>.active>a,
+               .navbar-regular.nav-v4 .navbar-nav>.active>a:focus,
+               .navbar-regular.nav-v4 .navbar-nav>.active>a:hover{
+               border: none;
+               background-color: transparent;
+               color: #fff;
+               -moz-transition: all 0.3s ease-in-out;
+               -webkit-transition: all 0.3s ease-in-out;
+               -o-transition: all 0.3s ease-in-out;
+               transition: all 0.3s ease-in-out;
+               }
+               .navbar-regular.nav-v4 .navbar-toggle .icon-bar {
+               background-color: #fff;
+               -moz-transition: all 0.3s ease-in-out;
+               -webkit-transition: all 0.3s ease-in-out;
+               -o-transition: all 0.3s ease-in-out;
+               transition: all 0.3s ease-in-out;
+               }
+               .navbar-regular.nav-v4.nav-scroll .navbar-nav>li>a,
+               .navbar-regular.nav-v4.nav-scroll .navbar-nav>.active>a,
+               .navbar-regular.nav-v4.nav-scroll .navbar-nav>.active>a:focus,
+               .navbar-regular.nav-v4.nav-scroll .navbar-nav>.active>a:hover{
+               border: none;
+               color: #fff;
+               }
+               .navbar-regular.nav-v4.nav-scroll .navbar-toggle .icon-bar {
+               background-color: #fff;
+               }
+               .navbar.nav-v4 .header-logo-text{
+               color: #fff;
+               -moz-transition: all 0.3s ease-in-out;
+               -webkit-transition: all 0.3s ease-in-out;
+               -o-transition: all 0.3s ease-in-out;
+               transition: all 0.3s ease-in-out;
+               }
+               .navbar.nav-v4.nav-scroll .header-logo-text{
+               color: #fff;
+               }
+               .navbar.nav-v4 .social-icon{
+               color: #fff;
+               -moz-transition: all 0.3s ease-in-out;
+               -webkit-transition: all 0.3s ease-in-out;
+               -o-transition: all 0.3s ease-in-out;
+               transition: all 0.3s ease-in-out;https://www.twitter.com/koutoubiala2https://www.twitter.com/koutoubiala2
+               }
+               .navbar.nav-v4.nav-scroll .social-icon{
+               color: #fff;
+               }
+
+
+.social {
+	overflow: hidden;
+	margin-bottom: 11px !important;
+}
+.contact-location {
+	margin-bottom: 0px !important;
+}
+
+.acf-map {
+   width: 100%;
+   height: 400px;
+   border: #ccc solid 1px;
+   margin: 20px 0;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+   max-width: inherit !important;
+}
+.social-icon {
+    font-size: 20px;
+    line-height: 40px;
+    background: #82C91E;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+	text-align: center;
+}
+.rtb-booking-form {
+	width: 66%;
+	margin: auto;
+}
+.rtb-booking-form input {
+	width: 100%;
+	max-width: 46em !important;
+	padding: 5px !important;
+	color: #000 !important;
+}
+.rtb-select.party select {
+	padding: 5px !important;
+	color: #000 !important;
+}
+.rtb-booking-form fieldset {
+	padding-bottom: 1em;
+	margin-bottom: 1em;
+	padding: 24px;
+}
+.rtb-booking-form legend {
+	padding: 0 0.5em;
+	margin-top: 73px  !important;
+	color: #fff;
+}
+.reservation {
+	background-color: #1a1a1a;
+	color: #fff;
+}
+.rtb-booking-form button {
+	background: #1a1a1a;
+	color: #fff;
+	padding: 8px;
+	font-size: 17px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+.specials-background {
+	background-size: 100%;
+	background-repeat: repeat;
+	height: auto;
+	padding-bottom: 50px;
+}
+.style-traditional.drink-menu .container {
+	margin-top: 0;
+}
+.section .title-area-about {
+	max-width: 760px;
+	margin: 80px auto;
+	display: block;
+	padding: 0 15px;
+	text-align: center;
+}
+.widget-h.w-infos {
+	margin-top: 30px;
+	min-height: 100px;
+}
+.widget-h {
+	border: 2px solid #F4F4F4;
+	padding: 10px 20px 40px 20px;
+	margin-bottom: 30px;
+	color: #4A4A4A;
+	font-size: 12px;
+	min-height: 450px;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.6);
+}
+.widget-h .w-horaires p {
+	line-height: 18px;
+	text-align: left;
+	padding-top: 8px;
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: left;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.widget-h .w-horaires h4 {
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: left;
+	font-size: 15px;
+	color: #fff;
+	font-weight: 800;
+	margin: 7px 0 0 0;
+}
+.section .title-area-descr {
+	max-width: 1000px;
+	margin: 0 auto 0;
+	display: block;
+	padding: 0 15px;
+	text-align: center;
+}
+.title-area-descr h2 {
+	text-align: center;
+	font-size: 35px;
+	font-weight: bold;
+}
+.widget-h.w-infos h3 {
+	color: #fff;
+}
+form input[type=submit].btn-main-color {
+	background: #fff;
+	color: #000 !important;
+	padding: 8px;
+	font-size: 17px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}
+.section-get-started{
+	background: #fff;
+	padding: 50px;
+}
+.instafeed {
+	display: flex;
+	padding: 5px;
+	position: relative;
+	overflow: hidden;
+}
+.instafeed, .photo-box:hover {
+	opacity: 1;
+}
+.instafeed a {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+.instafeed img {
+	width: 100%;
+}
+.photo-box {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: transparent;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+}
+.descr-title {
+	color: white;
+	font-size: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	min-width: 75%;
+}
+/*
+.date {
+	color: white;
+	font-size: 15px;
+	position: absolute;
+	margin: 5px 0;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+*/
+.text-dark {
+	color: #333;
+}
+.photo-box:hover {
+	background-color: rgba(235,97,47,0.85);
+}
+.text-dark {
+	color: #000 !important;
+	text-align: center !important;
+	font-size: 30px !important;
+	font-weight: bold !important;
+}
+.navbar.nav-v4 .header-logo {
+    display: block;
+    max-width: 240px;
+    padding-top: 36px !important;
+    padding-left: 30px;
+    height: 100%;
+}
+
+@media all and (max-width: 450px){
+	.social-links a i.social-icon:before {
+	margin-top: 9px;
+	display: block;
+}
+	.navbar.nav-v4 .socialnav {
+	margin-top: 23px;
+	margin-right: 94px;
+}
+	.navbar.nav-v4 .header-logo {
+	display: block;
+	max-width: 189px !important;
+	padding-left: 30px;
+	height: inherit;
+}
+	.navbar.nav-v4 .header-logo img, .navbar.nav-v4 .header-logo .header-logo-text {
+	position: relative;
+	top: 103%;
+	}
+}

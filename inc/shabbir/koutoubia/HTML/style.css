@@ -1,0 +1,101 @@
+ html{
+   height: 100%;
+}
+         .webkit-mobile-body{
+         height: 100%;
+         overflow: hidden;
+         }
+         .webkit-mobile-body>div:first-child{
+         height:100%;
+         overflow: auto;
+         -webkit-overflow-scrolling: touch;
+         }
+         .specials-background {
+         background: url(images/specials_back.jpg) no-repeat center center fixed; -webkit-background-size: cover;
+         background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
+         url(images/specials_back.jpg) no-repeat center center fixed; -webkit-background-size: cover;
+         -moz-background-size: cover;
+         -o-background-size: cover;
+         background-size: cover;
+         }
+ .navbar.nav-v4{
+               background-color: rgba(86,59,47,0.7);
+               -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               -moz-transition: all 0.3s ease-in-out;
+               -webkit-transition: all 0.3s ease-in-out;
+               -o-transition: all 0.3s ease-in-out;
+               transition: all 0.3s ease-in-out;
+               }
+               .navbar.nav-v4.nav-scroll{
+               background-color: rgba(86,59,47,0.7);
+               -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               }
+               .drink-menu .navbar.nav-v4{
+               background-color: rgba(86,59,47,0.7);
+               -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               -moz-transition: all 0.3s ease-in-out;
+               -webkit-transition: all 0.3s ease-in-out;
+               -o-transition: all 0.3s ease-in-out;
+               transition: all 0.3s ease-in-out;
+               }
+               .drink-menu .navbar.nav-v4.nav-scroll{
+               background-color: rgba(86,59,47,0.7);
+               -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.4);
+               }
+               .navbar-regular.nav-v4 .navbar-nav>li>a,
+               .navbar-regular.nav-v4 .navbar-nav>.active>a,
+               .navbar-regular.nav-v4 .navbar-nav>.active>a:focus,
+               .navbar-regular.nav-v4 .navbar-nav>.active>a:hover{
+               border: none;
+               background-color: transparent;
+               color: #fff;
+               -moz-transition: all 0.3s ease-in-out;
+               -webkit-transition: all 0.3s ease-in-out;
+               -o-transition: all 0.3s ease-in-out;
+               transition: all 0.3s ease-in-out;
+               }
+               .navbar-regular.nav-v4 .navbar-toggle .icon-bar {
+               background-color: #fff;
+               -moz-transition: all 0.3s ease-in-out;
+               -webkit-transition: all 0.3s ease-in-out;
+               -o-transition: all 0.3s ease-in-out;
+               transition: all 0.3s ease-in-out;
+               }
+               .navbar-regular.nav-v4.nav-scroll .navbar-nav>li>a,
+               .navbar-regular.nav-v4.nav-scroll .navbar-nav>.active>a,
+               .navbar-regular.nav-v4.nav-scroll .navbar-nav>.active>a:focus,
+               .navbar-regular.nav-v4.nav-scroll .navbar-nav>.active>a:hover{
+               border: none;
+               color: #fff;
+               }
+               .navbar-regular.nav-v4.nav-scroll .navbar-toggle .icon-bar {
+               background-color: #fff;
+               }
+               .navbar.nav-v4 .header-logo-text{
+               color: #fff;
+               -moz-transition: all 0.3s ease-in-out;
+               -webkit-transition: all 0.3s ease-in-out;
+               -o-transition: all 0.3s ease-in-out;
+               transition: all 0.3s ease-in-out;
+               }
+               .navbar.nav-v4.nav-scroll .header-logo-text{
+               color: #fff;
+               }
+               .navbar.nav-v4 .social-icon{
+               color: #fff;
+               -moz-transition: all 0.3s ease-in-out;
+               -webkit-transition: all 0.3s ease-in-out;
+               -o-transition: all 0.3s ease-in-out;
+               transition: all 0.3s ease-in-out;
+               }
+               .navbar.nav-v4.nav-scroll .social-icon{
+               color: #fff;
+               }
